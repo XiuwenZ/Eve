@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Eve</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel = "stylesheet" href = "eeviePlant.css">
+<script src = "eeviePlant.js"> </script>
+<link style="height: 32px" style="width: 32px" rel="icon" href="untitled.png">
+<title>Eve</title>
+
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-green w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-green" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="eveplan.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Activities</a>
+    <a href="advice.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Advice</a>
+    <a href="profile.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Profile</a>
+    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a> -->
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="eveplan.html" class="w3-bar-item w3-button w3-padding-large">Activities</a>
+    <a href="profile.html" class="w3-bar-item w3-button w3-padding-large">Profile</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
+  </div>
+</div>
+
+<!-- First Grid -->
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <img class = home src = potentialbackground.jpg></img>
+  <right class = goodActionsTitle>Bad Actions &nbsp&nbsp&nbsp Good Actions!</right>
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <span> <center><button class = 'badActions' onclick = minus()>Flew in a plane :(</button><button class = "goodActions" onclick = plus()>Carpooled!</button>
+        <br><br><button class = 'badActions' onclick = minus()>Used single-use plastic :(</button>
+        <button class = 'goodActions' onclick = plus()>Rode mass transit!</button>
+        <br><br><button class = 'badActions' onclick = minus()>Rode in a car by myself :(</button>
+        <button class = 'goodActions' onclick = plus()>Took a quick shower!</button>
+        <br><br><button class = 'badActions' onclick = minus()>Ran a half load of laundry :(</button>
+        <button class = 'goodActions' onclick = plus()>Used a reusable mug!</button>
+        <br><br><button class = 'badActions' onclick = minus()>Took a long shower :(</button>
+        <button class = 'goodActions' onclick = plus()>Used a metal straw!</button>
+        <br><br><button class = 'badActions' onclick = minus()>Bought fast fashion :(</button>
+        <button class = 'goodActions' onclick = plus()>Used my fan instead of AC!</button>
+        <br><br><button class = 'badActions' onclick = minus()>Littered a park :(</button>
+        <button class = 'goodActions' onclick = plus()>Used a reusable bag</button>
+        <br><br><button class = 'badActions' onclick = minus()>Used the AC :(</button>
+        <button class = 'goodActions' onclick = plus()>Recycled something!</button>
+        <br><br><button class = 'badActions' onclick = minus()>Let go of a balloon :(</button>
+        <button class = 'goodActions' onclick = plus()>Used solar charge!</button>
+        <br><br><button id = "id">Score = 0</button>
+      </span>
+        <center><img src = loraxCongrats.png alt = "loraxCongrats" id = "loraxCongrats">
+        <img src = birdcopy.gif alt = "birdie" id = "bird">
+        <img src = seed.png alt = "seed" id = "seed">
+        <img src = tree1.png alt = "tree1" id = "tree1">
+        <img src = tree2.png alt = "tree2" id = "tree2">
+        <img src = tree3.png alt = "tree3" id = "tree3">
+        <img src = tree4.png alt = "tree4" id = "tree4">
+        <img src = tree5.png alt = "tree5" id = "tree5">
+        <img src = tree6.png alt = "tree6" id = "tree6">
+        <img src = tree7.png alt = "tree7" id = "tree7">
+        <img src = squirrel.png alt = "squirrel" id = "squirrel"></center>
+        <img id = boot src = "eevieBoot.png">
+      </img>
+    <div class="w3-third w3-center">
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<br>
+<br>
+<br>
+
+<div id = 'emilyText'> Emily Kabat </div>
+<div id = 'xiuwenText'> Xiuwen Zhu </div>
+<div id = 'zoeText'> Zoe Markman </div>
+<div id = giannaText> Gianna Figueroa</div>
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container"><div class="w3-row-padding w3-light-grey w3-padding-64 w3-container"><div class="w3-row-padding w3-light-grey w3-padding-64 w3-container"><div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div id = creators> Creators </div>
+  <div>
+    <img id = 'emilyImg' src = emily.png></img>
+    <img id = 'xiuwenImg' src = xiuwen.png></img>
+    <img id = 'giannaImg' src = zoeImg.png></img>
+    <img id = 'zoeImg' src = giannaImg.png></img>
+    <img id = 'evelogo2' src = 'evelogo.png'>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">“Like music and art, love of nature is a common language that can transcend political or social boundaries.” -Jimmy Carter</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+
+</div>
+  <div class="w3-xlarge w3-padding-32">
+    <a href=https://www.facebook.com/eve.plant.104/timeline#_><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href=https://www.instagram.com/eve_plant/><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href=http://www.linkedin.com/in/zoe-markman-336b63168/><i class="fa
+    fa-linkedin"></i></a>
+    <a href=https://twitter.com/plant_eve><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    </a>
+ </div>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

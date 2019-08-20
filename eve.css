@@ -1,0 +1,147 @@
+#calendarButton{
+  position: absolute;
+  top: 60px;
+  right: 5px;
+  width: 250px;
+}
+
+#otherlogo{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100px;
+  height: 100px;
+}
+
+#evebox{
+  position: absolute;
+  left: 10px;
+  top: 5px;
+  width: 80px;
+  height: 90px;
+  z-index: -1;
+  opacity: .7;
+}
+
+#white{
+  position: absolute;
+  left: 18px;
+  top: 5px;
+  width: 60px;
+  height: 85px;
+  z-index: -1;
+}
+
+#allDates{
+  font-size: 20px;
+}
+
+#oldDate{
+  font-size: 20px;
+}
+
+#date{
+  font-size: 20px;
+}
+
+#bday{
+  font-size: 20px;
+}
+
+#background{
+  width:500px;
+  height:1000px;
+  }
+#center{
+  font-weight: 900;
+  font-size: 60px;
+  color: #0000A0 ;
+  font-family: 'Pacifico',cursive;
+}
+
+
+h1{
+  text-indent: 50px;
+  font-size:50px
+  font-family: monospace;
+}
+
+.links{
+  font-size: 15px;
+  margin: auto;
+  text-indent: 50px;
+  font-weight: 900;
+
+}
+
+.link{
+  font-size: 17px;
+  margin: auto;
+  text-indent: 50px;
+  font-weight: 900;
+}
+
+#title{
+  font-weight: 900;
+  font-size:15px;
+}
+
+
+#body{
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+
+#w2019{
+  font-size:70px;
+
+}
+
+.NM{
+  font-size:60px;
+  font-family:fantasy;
+}
+
+.otherBackground {
+  left: 0px;
+  top: 0px;
+  position: fixed;
+  content: url('ivy.jpg');
+  width: 100%;
+  height: 100%;
+  z-index: -50;
+  opacity: .7;
+  attachment: fixed;
+}
+
+#end{
+  font-size:70px;
+  font-weight:bold;
+}
+
+.text{
+  margin-left: 50px;
+  font-size:20px;
+}
+
+.type{
+  font-size: 23px;
+}
+
+.title{
+  font-size:50px;
+}
+
+#allDate{
+  position: absolute;
+  top: 120px;
+  left: 500px;
+}
+
+
+#ti{
+  font-size:60px;
+  font-family: 'Pacifico',cursive;
+
+}

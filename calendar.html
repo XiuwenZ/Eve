@@ -1,0 +1,180 @@
+
+
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="checkbox.css">
+<link href="eve.css" rel="stylesheet" type="text/css">
+<script src = "eeviePlant.js"> </script>
+<style>
+  /* body {
+  background-image: url("ivy.jpg");
+  background-size:1920px 1080px;
+
+  } */
+</style>
+<link style="height: 32px" style="width: 32px" rel="icon" href="untitled.png">
+<title>Eve</title>
+</head>
+<body onload = setValues()>
+  <img class = 'otherBackground'>
+  <a href=index.html><img src = evelogo.png id = 'otherlogo'></img></a>
+  <img src = download-3.png id = 'evebox'></img>
+  <center id="ti">Record My life</center>
+
+  <!-- <form action="/action_page.php"> -->
+  <div class="title">Date: <textarea rows = "1" name = 'date' id = 'bday'>MM.DD</textarea>&nbsp<button style="font-size :10pt;" onclick = clearDate()>clear</button></div>
+  <br>
+  <!-- <input type="submit"> -->
+
+</form>
+
+
+
+<!-- <p>Commute</p> -->
+
+<div class="title ">Check all that apply:</div>
+<div class = type> Commute: </div>
+<div class="text">*Public transit <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+
+<div class="text">*Car (alone)
+  <input <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="sadcar"  onclick = negativeAction(1) />
+</div>
+
+<div class="text">*Car (with 2+ people)
+  <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="carpool" onclick = positiveAction(1) />
+  </div>
+
+<div class="text">*Plane <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="plane" onclick = negativeAction(2) />
+  </div>
+
+<div class="text">*Bike <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="bike" onclick = positiveAction(3) />
+</div>
+<div class="text">*Walk <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class = type> Food: </div>
+<div class="text">*Delivered food <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(1)></input>
+</div>
+<div class="text">*Shopped at a farmer's market <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(3)></input>
+</div>
+<div class="text">*Shopped at a fast food brand <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(2)></input>
+</div>
+<div class="text">*Bought locally grown food <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(3)></input>
+</div>
+<div class="text">*Ate leftovers <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class="text">*Ate meat <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(2)></input>
+</div>
+<div class="text">*Ate dairy <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(1)></input>
+</div>
+<div class="text">*Ate in-season fruits <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class="text">*Ate out-of-season fruits <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(2)></input>
+</div>
+<div class="text">*At "imperfect" fruit <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class="text">*Bought hormone-free dairy <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(1)></input>
+</div>
+<div class="text">*Bought free range eggs <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class = type> Water: </div>
+<div class="text">*Bought bottled water <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(3)></input>
+</div>
+<div class="text">*Drank tap water <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class="text">*Used a plastic straw <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class="text">*Used a paper straw <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(1)></input>
+</div>
+<div class="text">*Used a reusable straw <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class = type> Waste: </div>
+<div class="text">*Recycled <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(3)></input>
+</div>
+<div class="text">*Composted <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(3)></input>
+</div>
+<div class="text">*Used single-use plastic <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(3)></input>
+</div>
+<div class = type> Shopping: </div>
+<div class="text">*Didn't buy anything! <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(3)></input>
+</div>
+<div class="text">*Bought used goods/thrifted <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class="text">*Bought from a fast fashion brand <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(3)></input>
+</div>
+<div class="text">*Bought from a sustainable company <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class="text">*Used a reusable shopping bag <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(1)></input>
+</div>
+<div class = type> Energy: </div>
+<div class="text">*Used AC <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(2)></input>
+</div>
+<div class="text">*Used heat <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(1)></input>
+</div>
+<div class="text">*Used a fan <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(1)></input>
+</div>
+<div class="text">*Used geothermal energy <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(3)></input>
+</div>
+<div class="text">*Didn't use heat, a fan, or AC <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(3)></input>
+</div>
+<div class="text">*Used renewable energy <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(4)></input>
+</div>
+<div class = type> Lights: </div>
+<div class="text">*Used LED lights <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(1)></input>
+</div>
+<div class="text">*Left the lights on when you left a room <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(1)></input>
+</div>
+<div class="text">*Turned all the lights off <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class="text">*Used lights powered by renewable energy <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(3)></input>
+</div>
+<div class = type> Laundry: </div>
+<div class="text">*Did a half load <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(2)></input>
+</div>
+<div class="text">*Did a full load <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(1)></input>
+</div>
+<div class="text">*Dry-cleaned <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(1)></input>
+</div>
+<div class="text">*Used a top-loading washing machine <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(1)></input>
+</div>
+<div class="text">*Used a side-loading washing machine <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(1)></input>
+</div>
+<div class="text">*Hung clothing to dry <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class="text">*Washed using hot water <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(1)></input>
+</div>
+<div class="text">*Washed using cold water <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(1)></input>
+</div>
+<div class = type> Hygiene: </div>
+<div class="text">*Took a quick shower <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(1)></input>
+</div>
+<div class="text">*Took a long shower <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(1)></input>
+</div>
+<div class="text">*Took a bath <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(1)></input>
+</div>
+<div class="text">*Used a face soap containing microbeads <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = negativeAction(2)></input>
+</div>
+<div class = type> Miscellaneous: </div>
+<div class="text">*Educated others about environmental issues <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class="text">*Educated yourself about environmental issues <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(2)></input>
+</div>
+<div class="text">*Advocated for government or private action against climate change <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(3)></input>
+</div>
+<div class="text">*Participated in the global climate strike on September 20th!! <input style="height: 20px;width:20px;" type="checkbox" name="commute" value="publictransit" onclick = positiveAction(4)></input>
+</div>
+
+<div>
+  <button style="font-size :10pt;" onclick = index(bday)>Submit</button>
+<br><br>
+<textarea rows = '2' id = 'date'>Your score: </textarea>
+<button style="font-size :10pt;" onclick = clearSelectDate()>clear</button>
+<br><br>
+<br><br><br><br>
+<div id = 'allDate'>
+  <button style="font-size :10pt;" onclick = allActions()> click here to see all your actions! </button>
+  <button style="font-size :10pt;" onclick = clearAllDates()>clear</button>
+<br><textarea rows = '25' cols = '35' id = allDates></textarea></div>
+
+</form>
+</body>
