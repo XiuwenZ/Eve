@@ -1,0 +1,125 @@
+header{
+  color:black;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+}
+
+#boot {
+  content:url(eevieBoot.png);
+  z-index: 0;
+  position: absolute;
+  left: 260px;
+  top: 505px;
+}
+
+#seed{
+  content: url(seed.png);
+  style: width:100px;height:100px;
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}
+
+#tree1 {
+content: url(tree1.png);
+style: width:100px;height:100px;
+position: absolute;
+left: 490px;
+top: 545px;
+z-index: 3;
+visibility: hidden;
+
+}
+
+#tree2{
+  content: url(tree2.png);
+  style: width:120px;height:120px;
+  position: absolute;
+  left: 440px;
+  top: 530px;
+  z-index: 3;
+  visibility: hidden;
+}
+
+#tree3{
+  content: url(tree3.png);
+  style: width:200px;height:200px;
+  position: absolute;
+  left: 440px;
+  top: 500px;
+  z-index: 3;
+  visibility: hidden;
+}
+
+#tree4{
+  content: url(tree4.png);
+  style: width:400px;height:400px;
+  position: absolute;
+  left: 340px;
+  top: 325px;
+  z-index: 3;
+  visibility: hidden;
+}
+
+#tree5{
+  content: url(tree5.png);
+  style: width:600px;height:600px;
+  position: absolute;
+  left: 200px;
+  top: 35px;
+  z-index: 3;
+  visibility: hidden;
+}
+
+#tree6{
+  content: url(tree6.png);
+  style: width:650px;height:650px;
+  position: absolute;
+  left: 200px;
+  top: 5px;
+  z-index: 3;
+  visibility: hidden;
+}
+
+#tree7{
+  content: url(tree7.png);
+  style: width:650px;height:650px;
+  position: absolute;
+  left: 130px;
+  top: 0px;
+  z-index: 3;
+  visibility: hidden;
+}
+
+#squirrel {
+  content: url(squirrel.png);
+  style: width:100px;height:100px;
+  position: absolute;
+  left: 330px;
+  top: 620px;
+  z-index: 4;
+  visibility: hidden;
+}
+
+#bird {
+  style: width:100px;height:100px;
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  z-index: 2;
+  visibility: hidden;
+}
+
+#plus{
+  content: url(download.png);
+}
+
+#background{
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
+  visibility: hidden;
+}
